@@ -59,13 +59,13 @@ const App = () => {
           onChange={(e) => setNewBook({ ...newBook, genre: e.target.value })}
         />
         <input
-          type="text"
+          type="number"
           placeholder="Year"
           value={newBook.year}
           onChange={(e) => setNewBook({ ...newBook, year: e.target.value })}
         />
         <input
-          type="text"
+          type="number"
           placeholder="Pages"
           value={newBook.pages}
           onChange={(e) => setNewBook({ ...newBook, pages: e.target.value })}
@@ -97,7 +97,7 @@ const App = () => {
           onChange={handleSearch}
         />
         <input
-          type="text"
+          type="number"
           placeholder="Pages"
           name="pages"
           value={search.pages}
